@@ -31,10 +31,10 @@ gpio.open(pinPITT, "output", function(err) {}) // Row 22, Yellow
 gpio.open(pinRICH, "output", function(err) {}) // Row 20, Red
 gpio.open(pinSFIA, "output", function(err) {}) // Row 18, Yellow
 
-gpio.read(pinDALY, function(err, value) {
-    if(err) throw err;
-    // console.log(value);    // The current state of the pin
-})
+// gpio.read(pinDALY, function(err, value) {
+//     if(err) throw err;
+//     // console.log(value);    // The current state of the pin
+// })
 
 
 // BART
@@ -55,6 +55,7 @@ setTimeout(function(){
 
       abbreviation = estimates[i].abbreviation,
       minutes = estimates[i].minutes;
+      // minutes = Math.floor(Math.random() * (20 - 1 + 1) + 1); // for faking display (no wifi available)
 
       if ( abbreviation != abbreviationPrevious ) { // make sure it's a new destination to check
         console.log( abbreviation + " " + minutes );
