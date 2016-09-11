@@ -1,3 +1,6 @@
+![](thumbnail.gif "")
+
+
 ssh pi@ixonos
 
 pi
